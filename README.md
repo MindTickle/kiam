@@ -1,3 +1,9 @@
+# MultiArch build
+```
+docker buildx create --use
+docker buildx build --platform linux/arm64,linux/amd64 -t public.ecr.aws/j2c0b4o4/mt-kiam-public:latest . --push
+```
+
 # kiam
 
 [![Docker Repository on Quay](https://quay.io/repository/uswitch/kiam/status "Docker Repository on Quay")](https://quay.io/repository/uswitch/kiam)
